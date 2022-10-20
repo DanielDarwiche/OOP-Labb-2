@@ -9,7 +9,7 @@ namespace OOP_Labb_2
         public bool _isHungry;
         public void StandGuard()
         {
-            Console.WriteLine("[{0} is standing guard", _name);
+            Console.WriteLine("{0} is standing guard", _name);
             _age++; Console.WriteLine("The Pitbull is now aged: {0}  \n", _age);
         }
         public PitBull(string name, int age, string color, int weight, string AnimalSound, bool CanBark, bool isHungry)

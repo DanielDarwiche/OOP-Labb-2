@@ -7,10 +7,10 @@ namespace OOP_Labb_2
     class Cat : Animal
     {
         public bool _isStriped;
-        public int _miceKilled = 0;
+        public int _miceKilled;
         public void killMouse()
         {
-            _miceKilled++;
+            _miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("A mouse has been killed");
             Console.WriteLine("{0} has killes {1} mice! Bad Kitty! \n", _name, _miceKilled);
             if (_weight % 2 == 0)
@@ -23,6 +23,7 @@ namespace OOP_Labb_2
                 _weight += 2;
                 Console.WriteLine("The cat ate PART OF the mouse, this time, and now weights: {0} \n", _weight);
             }
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public Cat(string name, int age, string color, int weight, string AnimalSound, bool isStriped, int miceKilled)
         {

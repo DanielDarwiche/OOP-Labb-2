@@ -9,7 +9,9 @@ namespace OOP_Labb_2
         public string _TypeOfRace;
         public void Trot()
         {
-            Console.WriteLine("The horse  {0} is trotting around \n", _name);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("The horse {0} is trotting around. Yippie! \n", _name);
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public Horse(string name, int age, string color, int weight, string AnimalSound, string TypeOfRace)
         {

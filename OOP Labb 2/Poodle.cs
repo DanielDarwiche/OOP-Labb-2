@@ -6,14 +6,16 @@ namespace OOP_Labb_2
 {
     class Poodle : Dog
     {
-        public bool _isPlayful = true;
+        public bool _isPlayful;
         public void RollAround()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0} is rolling around!", _name);
             _isPlayful = false;
             Console.WriteLine("The poodle is no longer playful, after playing for so long!");
             _weight -= 1;
             Console.WriteLine("After playing so much, the weight is now: {0} \n", _weight);
+            Console.ForegroundColor = ConsoleColor.White;    
         }
         public Poodle(string name, int age, string color, int weight, string AnimalSound, bool CanBark, bool isPlayful)
         {
