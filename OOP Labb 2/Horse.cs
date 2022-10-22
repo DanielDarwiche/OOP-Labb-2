@@ -10,7 +10,7 @@ namespace OOP_Labb_2
         public void Trot()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("The horse {0} is trotting around. Yippie! \n", _name);
+            Console.WriteLine("The horse {0} is trotting around. Yippie! \n", name);
             Console.ForegroundColor = ConsoleColor.White;
         }
         public Horse(string name, int age, string color, int weight, string AnimalSound, string TypeOfRace)
@@ -23,7 +23,7 @@ namespace OOP_Labb_2
             _TypeOfRace = TypeOfRace;
         }
 
-        public Horse() : this("No name is set", 0, "No color is set", 0, "No animalsound is set", "No race is set")
+        public Horse() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", "'No race is set'")
         {
 
         }

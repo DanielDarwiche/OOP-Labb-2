@@ -6,8 +6,20 @@ namespace OOP_Labb_2
     {
         static void Main(string[] args)
         {
+            Cat bob = new Cat();
+            bob.killMouse();
+            Console.WriteLine(bob.weight); bob.killMouse();
+            Console.WriteLine(bob.weight); bob.killMouse();
+            bob.Eat();
+            Console.WriteLine(bob.weight); bob.killMouse();
+            Console.WriteLine(bob.weight); bob.killMouse();
+            bob.Eat();
+            Console.WriteLine(bob.weight); bob.killMouse();
+            Console.WriteLine(bob.weight);
+
+
+            Console.WriteLine("****************************************************************");
             Horse Bettan = new Horse("Bettan", 17, "Black", 80, "Naaah", "Italian Stallion");
-            Console.WriteLine(Bettan.name);
             Console.WriteLine("Bettans vikt är {0}, åldern är {1}, och rasen är {2}", Bettan.weight, Bettan.age, Bettan.TypeOfRace);
             Bettan.Eat();
             Bettan.Poop();
@@ -17,7 +29,7 @@ namespace OOP_Labb_2
             Console.WriteLine("Bettans vikt är {0}, åldern är {1}, och rasen är {2}", Bettan.weight, Bettan.age, Bettan.TypeOfRace);
             Console.WriteLine("****************************************************************");
             Poodle Bruno = new Poodle("Bruno", 8, "Vit", 10, "Grrrr", true, true);
-            string lek="";
+            string lek = "";
             if (Bruno.isPlayful == true)
             {
                 lek = "är leksam";
@@ -39,8 +51,6 @@ namespace OOP_Labb_2
             Bruno.Poop();
             Bruno.Poop();
             Console.WriteLine("Brunos vikt är {0}, hans ålder är {1}, och han {2}.", Bruno.weight, Bruno.age, lek);
-            Console.WriteLine("****************************************************************");
-            Console.WriteLine("****************************************************************");
             Console.WriteLine("****************************************************************");
             Cat Ninja = new Cat("Ninja", 12, "Grey", 24, "MJAU MJAU MJAAAAU", true, 3);
             Console.WriteLine("Ninjas vikt är {0},  hennes ålder är {1}, och hon har mördat {2} antal möss.", Ninja.weight, Ninja.age, Ninja.miceKilled);

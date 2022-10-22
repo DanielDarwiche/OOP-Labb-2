@@ -11,18 +11,18 @@ namespace OOP_Labb_2
 
         public void killMouse()
         {
-            _miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
+            miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("A mouse has been killed");
-            Console.WriteLine("{0} has killes {1} mice! Bad Kitty! \n", _name, _miceKilled);
-            if (_weight % 2 == 0)
+            Console.WriteLine("{0} has killes {1} mice! Bad Kitty! \n", name, miceKilled);
+            if (miceKilled % 2 == 0)
             {
-                _weight += 5;
-                Console.WriteLine("The cat ate the mouse, this time, and now weights: {0} \n", _weight);
+                weight += 5;
+                Console.WriteLine("The cat ate the mouse, this time, and now weights: {0} \n", weight);
             }
             else
             {
-                _weight += 2;
-                Console.WriteLine("The cat ate PART OF the mouse, this time, and now weights: {0} \n", _weight);
+                weight += 2;
+                Console.WriteLine("The cat ate PART OF the mouse, this time, and now weights: {0} \n", weight);
             }
             Console.ForegroundColor = ConsoleColor.White;
         }
@@ -36,13 +36,13 @@ namespace OOP_Labb_2
             _isStriped = isStriped;
             _miceKilled = miceKilled;
         }
-        public Cat() : this("No name is set", 0, "No color is set", 0, "No animalsound is set", false, 0)
+        public Cat() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", false, 0)
         {
 
         }
 
         public bool isStriped { get { return _isStriped; } set { _isStriped = value; } }
-        public int miceKilled { get{ return _miceKilled; } set { _miceKilled = value; } }
+        public int miceKilled { get { return _miceKilled; } set { _miceKilled = value; } }
     }
 
 }

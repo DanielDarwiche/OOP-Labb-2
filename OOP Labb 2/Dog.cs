@@ -10,8 +10,8 @@ namespace OOP_Labb_2
         public void playDead()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Oh no! Is {0} dead? No... He´s just playing dead.", _name);
-            _age += 1; Console.WriteLine("The dog played dead so long that the age now is: {0} \n ", _age);
+            Console.WriteLine("Oh no! Is {0} dead? No... He´s just playing dead.", name);
+            age += 1; Console.WriteLine("The dog played dead so long that the age now is: {0} \n ", age);
             Console.ForegroundColor = ConsoleColor.White;
 
         }
@@ -24,7 +24,7 @@ namespace OOP_Labb_2
             _AnimalSound = AnimalSound;
             _CanBark = CanBark;
         }
-        public Dog() : this("No name is set", 0, "No color is set", 0, "No animalsound is set", false)
+        public Dog() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", false)
         {
 
         }
