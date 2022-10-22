@@ -6,8 +6,9 @@ namespace OOP_Labb_2
 {
     class Cat : Animal
     {
-        public bool _isStriped;
-        public int _miceKilled;
+        protected bool _isStriped;
+        protected int _miceKilled;
+
         public void killMouse()
         {
             _miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
@@ -34,12 +35,14 @@ namespace OOP_Labb_2
             _AnimalSound = AnimalSound;
             _isStriped = isStriped;
             _miceKilled = miceKilled;
-
         }
         public Cat() : this("No name is set", 0, "No color is set", 0, "No animalsound is set", false, 0)
         {
 
         }
+
+        public bool isStriped { get { return _isStriped; } set { _isStriped = value; } }
+        public int miceKilled { get{ return _miceKilled; } set { _miceKilled = value; } }
     }
 
 }

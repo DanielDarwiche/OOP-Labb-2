@@ -6,7 +6,7 @@ namespace OOP_Labb_2
 {
     class Poodle : Dog
     {
-        public bool _isPlayful;
+        protected bool _isPlayful;
         public void RollAround()
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -31,6 +31,7 @@ namespace OOP_Labb_2
         {
 
         }
+        public bool isPlayful { get { return _isPlayful; } set { _isPlayful = value; } }
     }
 
 }

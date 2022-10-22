@@ -5,12 +5,13 @@ using System.Text;
 namespace OOP_Labb_2
 {
     class Animal
-    { 
-        public string _name;
-        public int _age;
-        public string _color;
-        public int _weight;
-        public string _AnimalSound;
+    {
+        protected string _name;
+        protected int _age;
+        protected string _color;
+        protected int _weight;
+        protected string _AnimalSound;
+
         public Animal(string name, int age, string color, int weight, string AnimalSound)
         {
             _name = name;
@@ -20,9 +21,13 @@ namespace OOP_Labb_2
             _AnimalSound = AnimalSound;
         }
         public Animal() : this("No name is set",0,"No color is set",0,"No animalsound is set")
-        {
+        { }
+        public string name { get { return _name; } set { _name = value; } }
+        public int age { get { return _age;} set { _age = value; } }
+        public string color { get { return _color; } set { _color = value; } }
+        public int weight { get { return _weight; } set { _weight = value; } }
+        public string AnimalSound { get { return _AnimalSound; } set { _AnimalSound = value; } }
 
-        }
         public void Eat()
         {
             Console.ForegroundColor = ConsoleColor.Blue;

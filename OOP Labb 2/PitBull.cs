@@ -6,7 +6,8 @@ namespace OOP_Labb_2
 {
     class PitBull : Dog
     {
-        public bool _isHungry;
+        protected bool _isHungry;
+
         public void StandGuard()
         {
             Console.WriteLine("{0} is standing guard", _name);
@@ -26,6 +27,7 @@ namespace OOP_Labb_2
         {
 
         }
+        public bool isHungry { get { return _isHungry; } set { _isHungry = value; } }
     }
 
 }

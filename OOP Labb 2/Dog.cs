@@ -6,7 +6,7 @@ namespace OOP_Labb_2
 {
     class Dog : Animal
     {
-        public bool _CanBark;
+        protected bool _CanBark;
         public void playDead()
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -28,6 +28,7 @@ namespace OOP_Labb_2
         {
 
         }
+        public bool CanBark { get { return _CanBark; } set { _CanBark = value; } }
 
     }
 

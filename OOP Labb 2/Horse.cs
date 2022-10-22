@@ -6,7 +6,7 @@ namespace OOP_Labb_2
 {
     class Horse : Animal
     {
-        public string _TypeOfRace;
+        protected string _TypeOfRace;
         public void Trot()
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -22,10 +22,12 @@ namespace OOP_Labb_2
             _AnimalSound = AnimalSound;
             _TypeOfRace = TypeOfRace;
         }
+
         public Horse() : this("No name is set", 0, "No color is set", 0, "No animalsound is set", "No race is set")
         {
 
         }
+        public string TypeOfRace { get { return _TypeOfRace; } set { _TypeOfRace = value; } }
     }
 
 }
