@@ -17,14 +17,8 @@ namespace OOP_Labb_2
             Console.WriteLine("After playing so much, the weight is now: {0} \n", weight);
             Console.ForegroundColor = ConsoleColor.White;    
         }
-        public Poodle(string name, int age, string color, int weight, string AnimalSound, bool CanBark, bool isPlayful)
+        public Poodle(string name, int age, string color, int weight, string AnimalSound, bool CanBark, bool isPlayful):base(name,age,color, weight,AnimalSound,CanBark)
         {
-            _name = name;
-            _age = age;
-            _color = color;
-            _weight = weight;
-            _AnimalSound = AnimalSound;
-            _CanBark = CanBark;
             _isPlayful = isPlayful;
         }
         public Poodle() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", false, false)

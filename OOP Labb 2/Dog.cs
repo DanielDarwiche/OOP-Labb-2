@@ -15,14 +15,9 @@ namespace OOP_Labb_2
             Console.ForegroundColor = ConsoleColor.White;
 
         }
-        public Dog(string name, int age, string color, int weight, string AnimalSound, bool CanBark)
-        {
-            _name = name;
-            _age = age;
-            _color = color;
-            _weight = weight;
-            _AnimalSound = AnimalSound;
-            _CanBark = CanBark;
+        public Dog(string name, int age, string color, int weight, string AnimalSound, bool CanBark) :base(name,age,color,weight,AnimalSound)
+        {// public Tabletop(double l, double w) : base(l, w)
+           
         }
         public Dog() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", false)
         {
