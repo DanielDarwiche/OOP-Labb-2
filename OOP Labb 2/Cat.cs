@@ -8,24 +8,6 @@ namespace OOP_Labb_2
     {
         public bool _isStriped;
         public int _miceKilled;
-
-        public void killMouse()
-        {
-            _miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("A mouse has been killed");
-            Console.WriteLine("{0} has killes {1} mice! Bad Kitty! \n", _name, _miceKilled);
-            if (_miceKilled % 2 == 0)
-            {
-                _weight += 5;
-                Console.WriteLine("The cat ate the mouse, this time, and now weights: {0} \n", _weight);
-            }
-            else
-            {
-                _weight += 2;
-                Console.WriteLine("The cat ate PART OF the mouse, this time, and now weights: {0} \n", _weight);
-            }
-            Console.ForegroundColor = ConsoleColor.White;
-        }
         public Cat(string name, int age, string color, int weight, string AnimalSound, bool isStriped, int miceKilled)
         {
             _name = name;
@@ -38,6 +20,23 @@ namespace OOP_Labb_2
         }
         public Cat() : this("¨No name is set¨", 0, "¨No color is set¨", 0, "¨No animalsound is set¨", false, 0)
         {
+        }
+        public void killMouse()
+        {
+            _miceKilled++; Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("A mouse has been killed");
+            Console.WriteLine("{0} has killes {1} mice! Bad Kitty! \n", _name, _miceKilled);
+            if (_miceKilled % 2 == 0)
+            {
+                _weight += 5;
+                Console.WriteLine("The cat ate the WHOLE mouse, and now weights: {0} \n", _weight);
+            }
+            else
+            {
+                _weight += 2;
+                Console.WriteLine("The cat ate PART OF the mouse, and now weights: {0} \n", _weight);
+            }
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

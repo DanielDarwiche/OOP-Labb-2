@@ -42,7 +42,7 @@ namespace OOP_Labb_2
                 Console.WriteLine("Poop has been pooped... Yucky...");
                 Console.WriteLine("The animal is loosing weight! Stop pooping before it´s too late!");
                 _weight -= 4;
-                Console.WriteLine("The animal {0} now weights:{1}  \n", _name , _weight);
+                Console.WriteLine("The animal {0} now weights:{1} \n", _name , _weight);
             }
             else if (_weight <= 6)
             {
