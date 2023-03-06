@@ -6,6 +6,8 @@ namespace OOP_Labb_2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("THIS IS TO TEST THE OBJECTS/Animals");            
+            
             Horse Bettan = new Horse("", 17, "Black", 80, "Naaah", "Italian Stallion");
             Console.WriteLine("Bettans vikt är {0}, åldern är {1}, och rasen är {2}", Bettan._weight, Bettan._age, Bettan._TypeOfRace);
             Bettan.Eat();
